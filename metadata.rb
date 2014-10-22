@@ -9,4 +9,5 @@ version          '0.1.0'
 depends 'salt'
 depends 'apache2'
 depends 'ceph'
+depends 'partial_search'
 
