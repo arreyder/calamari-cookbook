@@ -12,7 +12,7 @@ include_recipe 'apache2::mod_wsgi'
 include_recipe 'ceph::install'
 include_recipe 'calamari::default'
 
-%w(libcairo2 supervisor python-cairo libpq5 postgresq salt-minion python-sqlalchemy python-greenlet python-twisted python-txamqp python-gevent dctrl-tools debconf-utils python-support).each do |pkg|
+%w(libcairo2 supervisor python-cairo libpq5 postgresql salt-minion python-sqlalchemy python-greenlet python-twisted python-txamqp python-gevent dctrl-tools debconf-utils python-support).each do |pkg|
   package pkg do
     action :install
   end
