@@ -18,12 +18,12 @@ include_recipe 'calamari::default'
   end
 end  
 
-apt_package "calamri-server" do
+apt_package "calamari-server" do
   action :install
 #  source '/root/calamari-server_1.2.1-64-g32d231e_amd64.deb'
 end
 
-apt_package "calamri-clients" do
+apt_package "calamari-clients" do
   action :install
 #  source '/root/calamari-clients_1.2.1.1-29-g3790c24_all.deb'
 end
